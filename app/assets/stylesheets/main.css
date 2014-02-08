@@ -29,12 +29,7 @@ body {
 
 
 
-.text{ 
-      text-align: center;
-      color: white;
-      font-family: helvetica;
-      font.size:1em;
-  }
+
 
 
 ::selection {
@@ -164,6 +159,13 @@ a:active {
 	background-color:#CC5DE8;
 	color:white;
 };
+
+.text{ 
+      text-align: center;
+      color: white;
+      font-family: helvetica;
+      font-size:1em;
+  }
 
 /* ==========================================================================
    Media Queries
