@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link_type: MyString
+  link_id: 1
+  achievment_id: 1
+
+two:
+  link_type: MyString
+  link_id: 1
+  achievment_id: 1

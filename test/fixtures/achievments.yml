@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  referee_id: MyString
+  completed: false
+  user_id: 1
+
+two:
+  referee_id: MyString
+  completed: false
+  user_id: 1
