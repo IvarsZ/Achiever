@@ -1,4 +1,7 @@
 AchieverRails::Application.routes.draw do
+
+  root "achiever#index"
+
   get "achiever/index"
   post "achiever/create_achievment"
 

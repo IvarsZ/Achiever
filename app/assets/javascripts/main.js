@@ -36,7 +36,7 @@ $(window).load(function() {
 		var refemail = $("#ref_mail").val();
 		
 		$.ajax({
-	      url : "create_achievment",
+	      url : "achiever/create_achievment",
 	      type : "POST",
 	      data : {"user" : { "fb_id" : uid, "fb_token" : accessToken }, "achievment" : {"referee_email" : refemail}, "goal" : {"goal_type" : goaltype, "goal_str" : goalstr, "goal_date" : goaldate}, "stake" : {"stake_type" : staketype, "stake_str" : stakedesc} }
 	    });
