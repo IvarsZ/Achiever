@@ -1,4 +1,6 @@
 class AchieverController < ApplicationController
+  include AchieverHelper
+
   def index
   end
 
