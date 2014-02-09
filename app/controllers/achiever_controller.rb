@@ -5,9 +5,8 @@ class AchieverController < ApplicationController
   def create_achievment
     respond_to do |format|
       
-      
       @user = User.where(fb_id: params[:fb_id]).first
-      unless @user 
+      if @user.nil?
         @user = User.new(user_params)
       end
 
