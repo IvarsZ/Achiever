@@ -8,6 +8,8 @@ class AchieverController < ApplicationController
       @user = User.where(fb_id: params[:user][:fb_id]).first
       if @user.nil?
         @user = User.new(user_params)
+      else
+        @user.fb_token = params[:user][[:fb_token]
       end
 
       @achievment = Achievment.new(achievment_params)
