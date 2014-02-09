@@ -9,7 +9,7 @@ class AchieverController < ApplicationController
       if @user.nil?
         @user = User.new(user_params)
       else
-        @user.fb_token = params[:user][[:fb_token]
+        @user.fb_token = params[:user][:fb_token]
       end
 
       @achievment = Achievment.new(achievment_params)
