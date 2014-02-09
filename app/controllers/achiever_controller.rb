@@ -45,7 +45,7 @@ class AchieverController < ApplicationController
       @user.save
 
       puts "*******"
-      puts @goal.goal_date
+      puts @goal_link.goal_date
       puts @achievment.id
       puts "*****************"
       schedule_new_confirmation(goal.goal_date, achievement.id)
