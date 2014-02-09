@@ -101,39 +101,42 @@ textarea {
 	padding: 3% 5% 3% 5% ;
 	height: 90%;
 	position:relative;
+	background-color:#1C8EF0;
 }
 .intro{
 	/*background-attachment: fixed;
 	background-size: cover;
 	display: block;*/
-	background-color:#0E7DDC;
+	/*background-color:#0E7DDC;*/
 }
 
 .chooseGoal{
-	
-	background-color:#1C8EF0;
-	
+
+	/*background-color:#1C8EF0;*/
+
 }
 
 .logFace{
-	
-	background-color:#3F9FF2;
-	
+
+	/*background-color:#3F9FF2;*/
+
 }
 
 .setStake{
-	background-color:#64B1F4;
-	
+	/*background-color:#64B1F4;*/
+
 }
 
 .chooseReferee{
-	background-color:#8CC5F6;
-	
+	/*background-color:#8CC5F6;*/
+
 }
 
 .congrats{
-	background-color:#DCEDFC;
-	color:#0E7DDC;
+	/*background-color:#DCEDFC;
+	color:#0E7DDC;*/
+	border-top:2px solid #17EDB2;
+	z-index:-1;
 }
 
 #logo{
@@ -158,21 +161,21 @@ textarea {
 	margin-right:auto;	*/
 }
 .contentWrapper {
-   font-size: 2em;
+   font-size: 1.75em;
    text-align:center;
    width:60%;
-	margin-right: auto;
+   margin-right: auto;
    margin-left: auto;
 }
 .contentWrapper p,.contentWrapper span,.contentWrapper input{
-margin:1em;
+margin:0.75em;
 }
 
 .imageWrapper{
 	width:250px;
 	height:250px;
 	float:left;
-	margin:5%;
+	margin:25px;
 }
 
 .imageWrapper img{
@@ -194,6 +197,9 @@ margin:1em;
 	position: absolute;
 	bottom: 0px;
 }
+
+
+
 .nextButton{
 	width:15em;
 	height:3em;
@@ -263,6 +269,30 @@ margin-right:auto;
 margin-left:auto;
 font-size:7em;
 text-align:center;
+margin-top:10%;
+}
+
+#footer{
+background-color:#0E7DDC;
+border-top:2px solid #17EDB2;
+height:4.5em;
+margin-top:-4.5em;
+font-size:1em;	
+padding: 1% 5% 1% 5%;
+z-index:10;
+/*width:110%;
+margin-left:-5%;
+bottom:0;
+position:relative;*/
+}
+#footer #logo{
+	float:left;
+}
+#footer p{
+	float:right;
+	font-size:0.5em;
+	font-size:1.5em;
+	top:50%;
 }
 a,
 a:link,
@@ -275,7 +305,10 @@ a:active {
 }
 
 
-
+.imageBox{
+	width: 950px;
+	margin: 0 auto;
+}
 
 
 /* ==========================================================================
