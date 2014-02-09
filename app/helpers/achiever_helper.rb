@@ -41,8 +41,8 @@ module AchieverHelper
       end
 
       message += "\n"
-      message += "http://achievr.herokuapp.com/" + Rails.application.routes.url_helpers.confirm_achievment_path(achievment.id) + "\n"
-      message += "http://achievr.herokuapp.com/" + Rails.application.routes.url_helpers.execute_stake_path(achievment.stake.id) + "\n"
+      message += "<a href='http://achievr.herokuapp.com/" + Rails.application.routes.url_helpers.confirm_achievment_path(achievment.id) + "'>THEY DID IT!</a>\n"
+      message += "<a href='http://achievr.herokuapp.com/" + Rails.application.routes.url_helpers.execute_stake_path(achievment.stake.id) + "'>THEY DIDN'T DO IT</a>\n"
       puts message
 
 		  ActionMailer::Base.mail(from: "achiever.app.ef@gmail.com", to: email, subject: "Confirm Achievement", body:  message).deliver
