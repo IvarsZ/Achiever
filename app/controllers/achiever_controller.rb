@@ -32,6 +32,7 @@ class AchieverController < ApplicationController
       @goal.link_id = @goal_link.id
       @goal.save
 
+      @stake_link.stake = @stake
       @stake_link.save
       @stake.link_id = @stake_link.id
       @stake.save

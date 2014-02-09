@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140209031128) do
+ActiveRecord::Schema.define(version: 20140209043013) do
 
   create_table "achievments", force: true do |t|
     t.boolean  "completed"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20140209031128) do
     t.string   "stake_str"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "stake_id"
   end
 
 end
