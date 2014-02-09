@@ -10,7 +10,9 @@ module AchieverHelper
     end
 
     scheduler = Rufus::Scheduler.new
+    puts "**************"
     puts date
+    puts "************"
     scheduler.at  date do
       email_referee(achievement_id)
     end
