@@ -15,6 +15,8 @@ class AchieverController < ApplicationController
       end
 
       @achievment = Achievment.new(achievment_params)
+      @graph = Koala::Facebook::API.new(@user.fb_token)
+      @achievment.referee_name = @graph.get_object("me").name
       @user.achievments << @achievment
 
       @goal = Goal.new(goal_params)
