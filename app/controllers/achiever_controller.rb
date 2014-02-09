@@ -46,6 +46,18 @@ class AchieverController < ApplicationController
     end  
   end
 
+  def execute_stake
+    respond_to do |format|
+
+      @stake = Stake.find(params[:stake_id])
+      case @stake.stake_type
+        where "facebookpost"
+          WallPostStake.find(@stake.link_id).post
+      end
+      format.json {rend json: {success: true}}
+    end    
+  end
+
   private
    
     def user_params
