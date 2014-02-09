@@ -51,7 +51,7 @@ class AchieverController < ApplicationController
 
       @stake = Stake.find(params[:stake_id])
       case @stake.stake_type
-        where "facebookpost"
+        when "facebookpost"
           WallPostStake.find(@stake.link_id).post
       end
       format.json {rend json: {success: true}}
