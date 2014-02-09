@@ -4,6 +4,8 @@ AchieverRails::Application.routes.draw do
 
   get "achiever/index"
   post "achiever/create_achievment"
+  get "achiever/execute_stake/:id", to: "achiever#execute_stake", as: "execute_stake"
+  get "achiever/confirm_achievment/:id", to: "achiever#confirm_achievment", as: "confirm_achievment"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

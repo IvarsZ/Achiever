@@ -48,16 +48,18 @@ class AchieverController < ApplicationController
     end  
   end
 
-  def execute_stake
-    respond_to do |format|
+  def execute_stake    
+    @stake = Stake.find(params[:id])
+    case @stake.stake_type
+      when "facebookpost"
+        WallPostStake.find(@stake.link_id).post
+    end
+  end
 
-      @stake = Stake.find(params[:stake_id])
-      case @stake.stake_type
-        when "facebookpost"
-          WallPostStake.find(@stake.link_id).post
-      end
-      format.json {rend json: {success: true}}
-    end    
+  def confirm_achievment
+   @achievment = Achievment.find(params[:id])
+   @achievment.completed = true
+   @achievment.save
   end
 
   private
