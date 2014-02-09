@@ -1,5 +1,7 @@
 AchieverRails::Application.routes.draw do
   get "achiever/index"
+  post "achiever/create_achievment"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

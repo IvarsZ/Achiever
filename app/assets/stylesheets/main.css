@@ -4,13 +4,17 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
+html
+ {
+    color: #222;
+	height:100%
+}
+
 button,
 input,
 select,
 textarea {
     color: #222;
-	height:100%
 }
 
 body {
@@ -29,7 +33,12 @@ body {
 
 
 
-
+.text{ 
+      text-align: center;
+      color: white;
+      font-family: helvetica;
+      font.size:1em;
+  }
 
 
 ::selection {
@@ -72,63 +81,64 @@ textarea {
    ========================================================================== */
 
 
-.intro{
+/*.intro{
 	//background: url("../img/wall.jpg") center no-repeat;
 	background-color:#17EDB2;
-}
+}*/
 
-.intro .imgholder{
+/*.intro .imgholder{
 	width: 350px;
 	margin: 0 auto;
-}
+}*/
 
-.imgholder img{
+/*.imgholder img{
 	width: 100%;
 	//height: auto;
-}
+}*/
 
 .info{
 	height:100%;
-	//background: url("../img/2edit.jpg") center no-repeat;
+	
 }
 
 .chooseGoal{
 	height:100%;
 	background-color:#F49B2E;
-	//background: url("../img/1edit.jpg") center no-repeat;
+	
 }
 
 .logFace{
 	height:100%;
 	background-color:#438DF3;
-	//background: url("../img/3edit.jpg") center no-repeat;
+	
 }
 
 .setStake{
 	height:100%;
 	background-color:#F23939;
-	//background: url("../img/4edit.jpg") center no-repeat;
+	
 }
 
 .chooseReferee{
 	height:100%;
 	background-color:#309D57;
-	//background: url("../img/5edit.jpg") center no-repeat;
+	
 }
 
 .congrats{
 	height:100%;
 	background-color:#05C1E2;
-	//background: url("../img/5edit.jpg") center no-repeat;
 }
 
-.panel{
+.intro{
 	width: 90%;
-	padding: 5%;
-	min-height: 800px;
+	padding-right: 5%;
+	padding-left: 5%;
+	height: 100%;
 	background-attachment: fixed;
 	background-size: cover;
 	display: block;
+	background-color:#17EDB2;
 }
 
 
@@ -136,9 +146,10 @@ textarea {
     width:700px;
 	margin-right: auto;
     margin-left: auto;
-    
+}
 
-
+.header{
+	font-size:3em;	
 }
 
 
@@ -152,20 +163,9 @@ a:active {
     font-weight: normal;
 }
 
-#exercise{
-	border-radius:5em;
-	border:none;
-	margin:0.5em;
-	background-color:#CC5DE8;
-	color:white;
-};
 
-.text{ 
-      text-align: center;
-      color: white;
-      font-family: helvetica;
-      font-size:1em;
-  }
+
+
 
 /* ==========================================================================
    Media Queries
@@ -173,7 +173,7 @@ a:active {
 
 @media only screen and (max-width: 480px) {
 body{
-	font-size: 5em;
+	/*font-size: 5em;*/
 }
 
 .panel{
@@ -184,32 +184,18 @@ body{
 
 @media only screen and (min-width: 481px) {
 body{
-	font-size: 6em;
+	/*font-size: 6em;*/
 }
 
 }
 
 @media only screen and (min-width: 768px) {
 body{
-	font-size: 1em;
+	/*font-size: 1em;*/
 }
 
 }
 
-
-.intro{
-	font-size: 0.2em;
-}
-
-.artistdesc{
-	font-size: 0.15em;
-	margin: 10px 0;
-}
-
-
-.info{
-	font-size: 0.4em;
-}
 
 /* ==========================================================================
    Helper classes

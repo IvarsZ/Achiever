@@ -11,34 +11,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208213743) do
+ActiveRecord::Schema.define(version: 20140209031128) do
 
   create_table "achievments", force: true do |t|
-    t.string   "referee_id"
     t.boolean  "completed"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "referee_email"
   end
 
   create_table "exercise_goals", force: true do |t|
-    t.date     "finish_date"
-    t.integer  "times"
+    t.string   "goal_str"
+    t.date     "goal_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "goals", force: true do |t|
-    t.string   "link_type"
+    t.string   "goal_type"
     t.integer  "link_id"
     t.integer  "achievment_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  create_table "stakes", force: true do |t|
+    t.integer  "achievment_id"
+    t.string   "stake_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "link_id"
+  end
+
   create_table "users", force: true do |t|
     t.string   "fb_id"
     t.string   "fb_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wake_up_goals", force: true do |t|
+    t.string   "goal_str"
+    t.date     "goal_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wall_post_stakes", force: true do |t|
+    t.string   "stake_str"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

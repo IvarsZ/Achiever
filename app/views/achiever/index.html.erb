@@ -17,90 +17,83 @@
 		 <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
          	
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/jquery.datetimepicker.js"></script>
         <script src="js/jquery.js"></script>
+        
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
-        
-        <script src="js/main.js"></script>
+        <script src="js/jquery.datetimepicker.js"></script>
         
         <title>Achiever</title>
     </head>
     <body>
-		<div class="panel intro">
-			<!--<div class="imgholder">-->
-				<!-- <img src="img/logo.png">  -->
-				<div style="width: 100%; clear: both; text-align: center">
+		<div class="intro">
+				<div class="header">
 					Achieve your goals<br/>
 					Be who you want to be<br/>
 					<br> Making the latest discoveries in behavioural science work for you </br> 
 				</div>
-			<!--</div>-->
 		</div>
+        
 		<div class="chooseGoal">
-		<span class="artistname">It is as easy as 1,2,3...</span>
-			<div id="text" class="text center">
-    		<div class="container" >
-				<p> Choose your goal, set your stake, get going! </p>
+			<span class="artistname">It is as easy as 1,2,3...</span
+				><p> Choose your goal, set your stake, get going! </p>
 				<p> I want to .... </p>
-
-						<input type="button" name="exercise" id="exercise" value="Exercise 3 times this week"><br> 
-						<input type="button" name="exercise" id="exercise" value="Wake up early ">
-					
+	
+    				<select id="goal_type" >
+                    	<option value="null" selected disabled>Choose your goal</option>
+                    	<option value="exercise">Exercise</option>
+                      <option value="wakeup">Wake up early</option>  
+					</select><br>
+                  
+                 		<input type="text" id="goal_desc" value="i.e. 3 days"><br>
+                 
+                   by
                  <div class="datepickerContainer">
-                            <label for="goal_time">for</label>
                             <input type="text" id="goal_time" name="goal_time">
                  </div><!--datepickerContainer-->  
-                    
-			</div>
 		</div>
-	</div>
 
-	<div id="text" class="text center">
+	
 		<div class="logFace">
 			<span class="login">Login</span>
 				Login with Facebook
    				<input type="button" name="fb_login" id="fb_login" value="Login"> 
 		</div>
-			
-		</div>
-
-
-		<div id="text" class="text center">
+        
 		<div class="setStake">
-			<span class="artistname">Set your stake</span>
+			<span class="header">Set your stake</span>
 			<div class="content">
 				<p> <h1> I stake ...</h1>  </p>
-				<p>
-				<ul> 
-
-					<br>One facebook post </br>
-					<br> If I don't achieve my goal.... my friends will know! </br>
-
-					 </ul>
-			</p>
-
-			</div>
-		</div>
-		</div>
-
-
-<div id="text" class="text center">
-				<div class="chooseReferee">
-			<span class="artistname">Track your progress</span>
-			<div class="artistdesc">
+				<select id="stake_type" >
+                    	<option value="facebookpost">One facebook post</option>
+                      <option value="postphoto" selected disabled>Post a horrible picture on Facebook</option>
+                      <option value="money" selected disabled>Give us a fiver!</option>
+                      <option value="reward" selected disabled>Get a discount in your gym membership!</option> 
+                      <option value="null" selected disabled>Choose your stake</option>
+				</select><br>
 				
-			<span class="artistname">Nominate your referee</span>
-			<div class="artistdesc">
-				Select friend from facebook...
+                <input type="text" id="stake_desc" value="i.e. I am a pussy!"><br>
+				
+					<p> If I don't achieve my goal.... my friends will know! </p>
+
 
 			</div>
 		</div>
+		
+        <div class="chooseReferee">
+			<span class="referee">Nominate your referee</span>
+			
+				Select your referee:
+                 
+                 		<input type="text" id="ref_mail" value="i.e. yourbestfriend@gmail.com"><br>
+                  	<input type="button" id="confirm_button" value="Set your goal!">
+                 
+		
 	</div>
 
-<div id="text" class="text center">
-				<div class="congrats">
-			<h1>Congratulations!</h1>
+
+<div class="congrats">
+			Congratulations!
 
 <br/>
 			You have set your goal<br/>
@@ -109,7 +102,7 @@
 			<br/>
 
 </div>
-		</div>
+		
 
 
 <div id="fb-root"></div>
@@ -132,6 +125,7 @@
     </script>
 
 
+    <script src="js/main.js"></script>
 
     </body>
 </html>
