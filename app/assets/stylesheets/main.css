@@ -96,63 +96,174 @@ textarea {
 	//height: auto;
 }*/
 
-.info{
-	height:100%;
-	
+.panel{
+	width: 90%;
+	padding: 3% 5% 3% 5% ;
+	height: 90%;
+	position:relative;
+}
+.intro{
+	/*background-attachment: fixed;
+	background-size: cover;
+	display: block;*/
+	background-color:#0E7DDC;
 }
 
 .chooseGoal{
-	height:100%;
-	background-color:#F49B2E;
+	
+	background-color:#1C8EF0;
 	
 }
 
 .logFace{
-	height:100%;
-	background-color:#438DF3;
+	
+	background-color:#3F9FF2;
 	
 }
 
 .setStake{
-	height:100%;
-	background-color:#F23939;
+	background-color:#64B1F4;
 	
 }
 
 .chooseReferee{
-	height:100%;
-	background-color:#309D57;
+	background-color:#8CC5F6;
 	
 }
 
 .congrats{
-	height:100%;
-	background-color:#05C1E2;
+	background-color:#DCEDFC;
+	color:#0E7DDC;
 }
 
-.intro{
-	width: 90%;
-	padding-right: 5%;
-	padding-left: 5%;
-	height: 100%;
-	background-attachment: fixed;
-	background-size: cover;
-	display: block;
-	background-color:#17EDB2;
+#logo{
+	width:15em;
+	height:auto;
+	float:right;
 }
-
-
-.content {
-    width:700px;
-	margin-right: auto;
-    margin-left: auto;
+#logo img{
+	width:100%;
+	height:auto;
+}
+#logo span{
+	float:right;
+	font-size:0.8em;
+	margin-top:-0.5em;
+	margin-right:2em;
 }
 
 .header{
-	font-size:3em;	
+	font-size:4em;
+	/*margin-left:auto;
+	margin-right:auto;	*/
+}
+.contentWrapper {
+   font-size: 2em;
+   text-align:center;
+   width:60%;
+	margin-right: auto;
+   margin-left: auto;
+}
+.contentWrapper p,.contentWrapper span,.contentWrapper input{
+margin:1em;
 }
 
+.imageWrapper{
+	width:250px;
+	height:250px;
+	float:left;
+	margin:5%;
+}
 
+.imageWrapper img{
+	width:100%;
+	height:auto;
+	border:2px solid #B6A8A8;
+	border-radius:50%;
+}
+
+.imageWrapper span{
+	width:250px;
+	text-align: center;
+}
+
+.buttonWrapper{
+	/*top:88.5%;*/
+	left:50%;
+	margin-left:-7.5em;
+	position: absolute;
+	bottom: 0px;
+}
+.nextButton{
+	width:15em;
+	height:3em;
+	border-radius: 5em 5em 0em 0em;
+	border:none;
+	color: #636363;
+	background-color:#3FB0F2;
+	opacity:0.5;
+}
+
+/*.chooseGoal .selectWrapper{
+ background: #fafafa url("img/star-full.png") no-repeat 90% 50%;	
+}*/
+
+select{
+	border-radius:20px;
+	padding:0.5em;
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	color:white;
+	border:none;
+	-webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+/*	background: url('img/star-full.png') no-repeat 100% 4px #fff;*/
+}
+.chooseGoal select{
+background-color:#28F360;
+}
+.setStake select{
+background-color:#FB2A2E;
+}
+input[type="text"]{
+ border: 0;
+ padding: 0.5em;
+ border-radius:2em;
+}
+
+#fb_login, #confirm_button{
+	 border: 0;
+ 	padding: 0.5em;
+ -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  background-color:#1B63EE;
+  color:white;
+}
+
+#stake_desc, #ref_mail{
+width:18em;
+}
+
+#congrats{
+width:90%;
+margin-right:auto;
+margin-left:auto;
+font-size:7em;
+text-align:center;
+}
 a,
 a:link,
 a:visited,
