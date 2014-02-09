@@ -37,8 +37,12 @@ module AchieverHelper
         when "exercise"
 		      message = "Hello , has your friend " + achiever + " completed his goal of: " + ExerciseGoal.find(goal.link_id).goal_str
         when "wakup"
-		      message = "Hello , has your friend " + achiever + " completed his goal of: " + WakeUpGoal.find(goal.link_id).goal_str
+		      message = "Hello , has your friend " + achiever + " completed his goal of: " + WakeUpGoal.find(goal.link_id).goal_str, "\n"
+          m
       end
+
+      message += Rails.application.routes.url_helpers.confirm_achievment_path(achievment.id)
+      message += Rails.application.routes.url_helpers.execute_stake_path(achievment.stake.id)
 
 		  ActionMailer::Base.mail(from: "achiever.app.ef@gmail.com", to: email, subject: "Confirm Achievement", body:  message).deliver
     end
