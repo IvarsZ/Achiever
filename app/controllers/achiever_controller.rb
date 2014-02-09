@@ -48,7 +48,7 @@ class AchieverController < ApplicationController
       puts @goal_link.goal_date
       puts @achievment.id
       puts "*****************"
-      schedule_new_confirmation(goal.goal_date, achievement.id)
+      schedule_new_confirmation(@goal_link.goal_date, @achievment.id)
 
       format.json {render json: {success: true}}
     end  
